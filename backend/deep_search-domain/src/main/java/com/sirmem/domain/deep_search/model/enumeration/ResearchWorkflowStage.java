@@ -1,0 +1,13 @@
+package com.sirmem.domain.deep_search.model.enumeration;
+
+public enum ResearchWorkflowStage {
+    QUESTION_RECEIVED,
+    CLARIFICATION_NEEDED,
+    CLARIFICATION_VERIFIED,
+    BRIEF_GENERATED,
+    RESEARCH_PLANNED,
+    RESEARCH_IN_PROGRESS,
+    RESEARCH_ACCUMULATED,
+    RESEARCH_COMPLETE_SIGNALED,
+    FINAL_REPORT_GENERATED
+}

@@ -39,6 +39,16 @@ class ResearchControllerTest {
                 .andExpect(jsonPath("$.topics").doesNotExist())
                 .andExpect(jsonPath("$.prompt").doesNotExist())
                 .andExpect(jsonPath("$.model").doesNotExist())
-                .andExpect(jsonPath("$.tools").doesNotExist());
+                .andExpect(jsonPath("$.tools").doesNotExist())
+                .andExpect(jsonPath("$.researchBrief").doesNotExist())
+                .andExpect(jsonPath("$.planningContext").doesNotExist())
+                .andExpect(jsonPath("$.researchTopics").doesNotExist())
+                .andExpect(jsonPath("$.processedNotes").doesNotExist())
+                .andExpect(jsonPath("$.workflowState").doesNotExist())
+                .andExpect(jsonPath("$.clarificationDecision").doesNotExist())
+                .andExpect(jsonPath("$.researchCompleteSignal").doesNotExist())
+                .andExpect(jsonPath("$.supervisorMessages").doesNotExist())
+                .andExpect(jsonPath("$.researcherMessages").doesNotExist())
+                .andExpect(jsonPath("$.commands").doesNotExist());
     }
 }
